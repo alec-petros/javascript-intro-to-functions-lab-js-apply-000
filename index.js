@@ -5,6 +5,6 @@ function whisper(string) {
   return string.toLowerCase()
 }
 function logShout(string) {
-  spy("HELLO!")
+  expect.spyOn(console, 'log').andCallThrough()
   console.log(string.toUpperCase)
 }
